@@ -36,3 +36,4 @@ support for this functions inside of angr.
 7. Clone [pysoot](https://github.com/Phat3/pysoot) to angr-dev. 
 8. Install pysoot.
 	``` pip install -e .```
+9. Switch to branch **feat/soot** in **angr**
