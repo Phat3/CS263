@@ -1,0 +1,39 @@
+
+------------------------------------
+
+<com.javanagr.Main.main(java.lang.String[])+(0:0)>
+
+//<Block 0 [0], 5 statements>
+r0 <- @parameter0[java.lang.String[]]
+r1 = '"Hello"'
+r2 = '"Good"'
+$z0 = r1.equals(r2) [virtualinvoke java.lang.String.equals(java.lang.Object)]
+if($z0 == 0) goto 8
+
+------------------------------------
+
+
+------------------------------------
+
+<java.lang.String.equals(java.lang.String)+(0:0)>
+
+EXCEPTION!!
+
+CLE error: Class "java.lang.String" does not exist.
+
+------------------------------------
+
+
+------------------------------------
+
+<com.javanagr.Main.main(java.lang.String[])+(0:4)>
+
+//<Block 0 [0], 5 statements>
+r0 <- @parameter0[java.lang.String[]]
+r1 = '"Hello"'
+r2 = '"Good"'
+$z0 = r1.equals(r2) [virtualinvoke java.lang.String.equals(java.lang.Object)]
+if($z0 == 0) goto 8
+
+------------------------------------
+
