@@ -41,6 +41,6 @@ support for this functions inside of angr.
 
 ## TODO
 
-- [ ] Fix call <SimState>.block() if the arch is soot
+- [ ] Fix call \<SimState\>.block() if the arch is soot
 - [ ] Implement support java.lang.String in angr
 - [ ] Implement Simprocedure java.lang.String.equals
