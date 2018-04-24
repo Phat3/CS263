@@ -5,9 +5,8 @@ import angr
 logging.getLogger("angr.engines.soot.engine").setLevel("DEBUG")
 logging.getLogger("angr.factory").setLevel("DEBUG")
 logging.getLogger("angr.cle").setLevel("DEBUG")
-logging.getLogger("angr.procedures.java").setLevel("DEBUG")
 
-JAR_PATH = "./out/artifacts/java_string_simple_jar/java_string_simple.jar"
+JAR_PATH = "./simple3.jar"
 
 def dump_bock_info(block):
     try:

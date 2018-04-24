@@ -10,7 +10,6 @@ self_dir = os.path.dirname(os.path.realpath(__file__))
 
 def test_java_simple3():
     binary_path = os.path.join(self_dir, "simple3.jar")
-    import ipdb; ipdb.set_trace()
     proj = angr.Project(binary_path)
     print proj.loader.main_object._classes['simple3.Class1']
 
