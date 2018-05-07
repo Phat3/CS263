@@ -37,7 +37,8 @@ def dump_stashes_info(simgr):
 
 def main():
     proj = angr.Project(JAR_PATH)
-    simgr = proj.factory.simgr()
+    state = proj.factory.blank_state(add_options={angr.options.STRINGS_ANALYSIS})
+    simgr = proj.factory.simgr(state)
     dump_stashes_info(simgr)
     simgr.run(step_func=dump_stashes_info)
 

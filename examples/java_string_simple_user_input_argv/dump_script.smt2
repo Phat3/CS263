@@ -1,0 +1,7 @@
+(set-logic ALL)
+(declare-fun ciao_0_32 () Int)
+(declare-fun prova_1_7 () String)
+(assert (let ((.def_0 (= ciao_0_32 0))) (let ((.def_1 (not .def_0))) .def_1)))
+(assert (let ((.def_0 (= "Hello" prova_1_7))) .def_0))
+(check-sat)
+(get-model)

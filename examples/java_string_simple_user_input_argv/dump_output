@@ -87,13 +87,23 @@ goto 17
 ---> Stash: active
 
 **********************************
-------> Constraints: [<Bool ciao_0_32 != 0x0>]
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
 
 ------> Addr: <com.javangr.Main.main(java.lang.String[])+(4:0)>
 
 //<Block 4 [13], 2 statements>
 $r3 = StaticFieldRef (u'out', u'java.lang.System')
 $r3.println('"Lose"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(3:0)>
+
+//<Block 3 [10], 3 statements>
+$r5 = StaticFieldRef (u'out', u'java.lang.System')
+$r5.println('"Win"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+goto 15
 
 **********************************
 ------> Constraints: [<Bool ciao_0_32 == 0x0>]
@@ -111,7 +121,13 @@ None
 ---> Stash: active
 
 **********************************
-------> Constraints: [<Bool ciao_0_32 != 0x0>]
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
 
 ------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
 
@@ -128,7 +144,45 @@ None
 ---> Stash: active
 
 **********************************
-------> Constraints: [<Bool ciao_0_32 != 0x0>]
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(5:0)>
+
+//<Block 5 [15], 2 statements>
+$r4 = StaticFieldRef (u'out', u'java.lang.System')
+$r4.println('"Done"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(3:2)>
+
+//<Block 3 [10], 3 statements>
+$r5 = StaticFieldRef (u'out', u'java.lang.System')
+$r5.println('"Win"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+goto 15
+**********************************
+---> Stash: deadended
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 == 0x0>]
+
+------> Addr: <Terminator>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
 
 ------> Addr: <com.javangr.Main.main(java.lang.String[])+(5:0)>
 
@@ -150,7 +204,15 @@ $r4.println('"Done"') [virtualinvoke java.io.PrintStream.println(java.lang.Strin
 ---> Stash: active
 
 **********************************
-------> Constraints: [<Bool ciao_0_32 != 0x0>]
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(6:0)>
+
+//<Block 6 [17], 1 statements>
+return null
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
 
 ------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
 
@@ -164,12 +226,20 @@ $r4.println('"Done"') [virtualinvoke java.io.PrintStream.println(java.lang.Strin
 
 **********************************
 -----------------------------------------------------------------
+<Terminator>
+None
 
 ------------ STEP -----------------------------------------------
 ---> Stash: active
 
 **********************************
-------> Constraints: [<Bool ciao_0_32 != 0x0>]
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
+
+------> Addr: <Terminator>
+
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
 
 ------> Addr: <com.javangr.Main.main(java.lang.String[])+(6:0)>
 
@@ -192,7 +262,7 @@ None
 ---> Stash: active
 
 **********************************
-------> Constraints: [<Bool ciao_0_32 != 0x0>]
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
 
 ------> Addr: <Terminator>
 
@@ -201,6 +271,12 @@ None
 
 **********************************
 ------> Constraints: [<Bool ciao_0_32 == 0x0>]
+
+------> Addr: <Terminator>
+
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
 
 ------> Addr: <Terminator>
 
@@ -217,7 +293,13 @@ None
 
 
 **********************************
-------> Constraints: [<Bool ciao_0_32 != 0x0>]
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) != StringS('prova_1_7', False)>]
+
+------> Addr: <Terminator>
+
+
+**********************************
+------> Constraints: [<Bool ciao_0_32 != 0x0>, <Bool StringV('Hello', 5) == StringS('prova_1_7', False)>]
 
 ------> Addr: <Terminator>
 
