@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         String input_1 = "Hello";
-        String input_2 = "Good";
+        String input_2 = "Good"; // args[0]
         if (input_1.equals(input_2)) {
             System.out.println("Win");
         }
