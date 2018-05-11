@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="java_angr_method_call:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_angr_method_call_jar</output-path>
+    <root id="archive" name="java_angr_method_call.jar">
+      <element id="module-output" name="java_angr_method_call" />
+    </root>
+  </artifact>
+</component>
