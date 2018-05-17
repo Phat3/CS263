@@ -43,6 +43,10 @@ Started to implement the demo for the class (fauxware), but we figured that the 
 Implemented the simple simProcedure for scanner.nextLine() in order to read from standard input. 
 
 
+### Week 5
+Implemented the support for static fields in java classess.
+The static field reference with default values are initiallized during the time when the classes are loaded using the method \<clinit\>. During the normal execution of the program, this method is never executed, so we decided to force its execution at the first time the class is called.  
+
 ## TODO
 
 - [x] Fix call \<SimState\>.block() if the arch is soot
@@ -53,7 +57,7 @@ Implemented the simple simProcedure for scanner.nextLine() in order to read from
 - [x] Implement the command line arguments in angr
 - [x] Implement the function calls with parameters passed in 
 - [ ] Implement the objects support in angr
-- [ ] Implement the support for static fields in java classes
+- [x] Implement the support for static fields in java classes
 
  
 ## Angr deployment tutorial 
