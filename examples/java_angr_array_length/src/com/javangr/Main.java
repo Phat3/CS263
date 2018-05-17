@@ -4,6 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         int[] dummy_array = {1, 2, 3};
+
+        int a = dummy_array[1];
+
         int dummy_array_length = dummy_array.length;
 
         int args_length = args.length;

@@ -1,0 +1,367 @@
+[31;1mDeprecation warning: Use main_object instead of main_bin[0m
+<Terminator>
+None
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:0)>
+
+//<Block 0 [0], 9 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r4 = new java.util.Scanner
+$r5 = StaticFieldRef (u'in', u'java.lang.System')
+$r4.<init>($r5) [specialinvoke java.util.Scanner.<init>(java.io.InputStream)]
+r1 = $r4
+r2 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+r3 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+i0 = authenticate(r2, r3) [staticinvoke com.javangr.Main.authenticate(java.lang.String, java.lang.String)]
+if(i0 != 1) goto 11
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.util.Scanner.<init>(java.io.InputStream)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:4)>
+
+//<Block 0 [0], 9 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r4 = new java.util.Scanner
+$r5 = StaticFieldRef (u'in', u'java.lang.System')
+$r4.<init>($r5) [specialinvoke java.util.Scanner.<init>(java.io.InputStream)]
+r1 = $r4
+r2 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+r3 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+i0 = authenticate(r2, r3) [staticinvoke com.javangr.Main.authenticate(java.lang.String, java.lang.String)]
+if(i0 != 1) goto 11
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.util.Scanner.nextLine()+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:6)>
+
+//<Block 0 [0], 9 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r4 = new java.util.Scanner
+$r5 = StaticFieldRef (u'in', u'java.lang.System')
+$r4.<init>($r5) [specialinvoke java.util.Scanner.<init>(java.io.InputStream)]
+r1 = $r4
+r2 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+r3 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+i0 = authenticate(r2, r3) [staticinvoke com.javangr.Main.authenticate(java.lang.String, java.lang.String)]
+if(i0 != 1) goto 11
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.util.Scanner.nextLine()+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:7)>
+
+//<Block 0 [0], 9 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r4 = new java.util.Scanner
+$r5 = StaticFieldRef (u'in', u'java.lang.System')
+$r4.<init>($r5) [specialinvoke java.util.Scanner.<init>(java.io.InputStream)]
+r1 = $r4
+r2 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+r3 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+i0 = authenticate(r2, r3) [staticinvoke com.javangr.Main.authenticate(java.lang.String, java.lang.String)]
+if(i0 != 1) goto 11
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.authenticate(java.lang.String,java.lang.String)+(0:0)>
+
+//<Block 0 [0], 5 statements>
+r0 <- @parameter0[java.lang.String]
+r1 <- @parameter1[java.lang.String]
+$r2 = StaticFieldRef (u'sneaky', u'com.javangr.Main')
+$z0 = r1.equals($r2) [virtualinvoke java.lang.String.equals(java.lang.Object)]
+if($z0 == 0) goto 6
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.lang.String.equals(java.lang.Object)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.authenticate(java.lang.String,java.lang.String)+(0:4)>
+
+//<Block 0 [0], 5 statements>
+r0 <- @parameter0[java.lang.String]
+r1 <- @parameter1[java.lang.String]
+$r2 = StaticFieldRef (u'sneaky', u'com.javangr.Main')
+$z0 = r1.equals($r2) [virtualinvoke java.lang.String.equals(java.lang.Object)]
+if($z0 == 0) goto 6
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.authenticate(java.lang.String,java.lang.String)+(2:0)>
+
+//<Block 2 [6], 1 statements>
+return 0
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.authenticate(java.lang.String,java.lang.String)+(1:0)>
+
+//<Block 1 [5], 1 statements>
+return 1
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:8)>
+
+//<Block 0 [0], 9 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r4 = new java.util.Scanner
+$r5 = StaticFieldRef (u'in', u'java.lang.System')
+$r4.<init>($r5) [specialinvoke java.util.Scanner.<init>(java.io.InputStream)]
+r1 = $r4
+r2 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+r3 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+i0 = authenticate(r2, r3) [staticinvoke com.javangr.Main.authenticate(java.lang.String, java.lang.String)]
+if(i0 != 1) goto 11
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:8)>
+
+//<Block 0 [0], 9 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r4 = new java.util.Scanner
+$r5 = StaticFieldRef (u'in', u'java.lang.System')
+$r4.<init>($r5) [specialinvoke java.util.Scanner.<init>(java.io.InputStream)]
+r1 = $r4
+r2 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+r3 = r1.nextLine() [virtualinvoke java.util.Scanner.nextLine()]
+i0 = authenticate(r2, r3) [staticinvoke com.javangr.Main.authenticate(java.lang.String, java.lang.String)]
+if(i0 != 1) goto 11
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(2:0)>
+
+//<Block 2 [11], 1 statements>
+rejected() [staticinvoke com.javangr.Main.rejected()]
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(1:0)>
+
+//<Block 1 [9], 2 statements>
+accepted() [staticinvoke com.javangr.Main.accepted()]
+goto 12
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.rejected()+(0:0)>
+
+//<Block 0 [0], 4 statements>
+$r0 = StaticFieldRef (u'out', u'java.lang.System')
+$r0.println('"Go away!"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+exit(1) [staticinvoke java.lang.System.exit(int)]
+return null
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.accepted()+(0:0)>
+
+//<Block 0 [0], 4 statements>
+$r0 = StaticFieldRef (u'out', u'java.lang.System')
+$r0.println('"Welcome to the admin console, trusted user!\\n"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+exit(1) [staticinvoke java.lang.System.exit(int)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.rejected()+(0:2)>
+
+//<Block 0 [0], 4 statements>
+$r0 = StaticFieldRef (u'out', u'java.lang.System')
+$r0.println('"Go away!"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+exit(1) [staticinvoke java.lang.System.exit(int)]
+return null
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <com.javangr.Main.accepted()+(0:2)>
+
+//<Block 0 [0], 4 statements>
+$r0 = StaticFieldRef (u'out', u'java.lang.System')
+$r0.println('"Welcome to the admin console, trusted user!\\n"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+exit(1) [staticinvoke java.lang.System.exit(int)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.lang.System.exit(int)+(0:0)>
+
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.lang.System.exit(int)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.lang.System.exit(int)+(0:0)>
+
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.lang.System.exit(int)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: deadended
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) != StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.lang.System.exit(int)+(0:0)>
+
+
+**********************************
+------> Constraints: [<Bool StringS('scanner_return_2_1000', False) == StringV('SOSNEAKY', 8)>]
+
+------> Addr: <java.lang.System.exit(int)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
