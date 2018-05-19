@@ -47,17 +47,23 @@ Implemented the simple simProcedure for scanner.nextLine() in order to read from
 Implemented the support for static fields in java classess.
 The static field reference with default values are initiallized during the time when the classes are loaded using the method \<clinit\>. During the normal execution of the program, this method is never executed, so we decided to force its execution at the first time the class is called.  
 
+Implemented the simple java application that uses String.concat() function. 
+Implemented the corresponding simProcedure in angr that returns the constraints of the String.concat() function.
+Found a bug in command line arguements handling. 
+
 ## TODO
 
 - [x] Fix call \<SimState\>.block() if the arch is soot
 - [x] Implement support java.lang.String in angr
 - [x] Implement Simprocedure java.lang.String.equals
+- [x] Implement Simprocedure java.lang.String.concat
 - [x] Implement Simprocedure java.util.scanner.nextLine
 - [x] Implement the array support in angr
 - [x] Implement the command line arguments in angr
 - [x] Implement the function calls with parameters passed in 
 - [ ] Implement the objects support in angr
 - [x] Implement the support for static fields in java classes
+- [ ] Fix the command line arguments handling bug in angr
 
  
 ## Angr deployment tutorial 
