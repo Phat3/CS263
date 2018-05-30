@@ -1,0 +1,37 @@
+class com.javangr.Dummy extends java.lang.Object
+{
+    private int attr_1;
+    public int attr_2;
+
+    public void <init>(int)
+    {
+        com.javangr.Dummy r0;
+        int i0;
+
+        r0 := @this: com.javangr.Dummy;
+
+        i0 := @parameter0: int;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>(); // Superclass constructor
+
+        r0.<com.javangr.Dummy: int attr_1> = i0;
+
+        return;
+    }
+
+    public int foo(int, int)
+    {
+        com.javangr.Dummy r0;
+        int i0, i1, $i2;
+
+        r0 := @this: com.javangr.Dummy;
+
+        i0 := @parameter0: int;
+
+        i1 := @parameter1: int;
+
+        $i2 = i0 + i1;
+
+        return $i2;
+    }
+}

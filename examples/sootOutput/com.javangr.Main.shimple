@@ -1,0 +1,40 @@
+public class com.javangr.Main extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        com.javangr.Main r0;
+
+        r0 := @this: com.javangr.Main;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>(); // Superclass constructor
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        com.javangr.Dummy r1, $r2;
+        int i0, i1;
+        java.io.PrintStream $r3;
+
+        r0 := @parameter0: java.lang.String[];
+
+        $r2 = new com.javangr.Dummy;
+
+        specialinvoke $r2.<com.javangr.Dummy: void <init>(int)>(12);
+
+        r1 = $r2;
+
+        i0 = r1.<com.javangr.Dummy: int attr_2>;
+
+        i1 = virtualinvoke r1.<com.javangr.Dummy: int foo(int,int)>(11, 2);
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(int)>(i1);
+
+        return;
+    }
+}

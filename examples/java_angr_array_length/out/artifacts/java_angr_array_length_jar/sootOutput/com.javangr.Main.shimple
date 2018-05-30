@@ -1,0 +1,56 @@
+public class com.javangr.Main extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        com.javangr.Main r0;
+
+        r0 := @this: com.javangr.Main;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        int[] r1, $r2;
+        int i0, i1, i2;
+        java.io.PrintStream $r3, $r4;
+
+        r0 := @parameter0: java.lang.String[];
+
+        $r2 = newarray (int)[3];
+
+        $r2[0] = 1;
+
+        $r2[1] = 2;
+
+        $r2[2] = 3;
+
+        r1 = $r2;
+
+        i0 = r1[1];
+
+        i1 = lengthof r1;
+
+        i2 = lengthof r0;
+
+        if i1 != i2 goto label1;
+
+        $r4 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r4.<java.io.PrintStream: void println(java.lang.String)>("Nice!");
+
+        goto label2;
+
+     label1:
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("Fail");
+
+     label2:
+        return;
+    }
+}
