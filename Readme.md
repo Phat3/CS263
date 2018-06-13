@@ -61,25 +61,31 @@ Found a bug in command line arguements handling.
 - [x] Implement the array support in angr
 - [x] Implement the command line arguments in angr
 - [x] Implement the function calls with parameters passed in 
-- [ ] Implement the objects support in angr
+- [x] Implement the objects support in angr
 - [x] Implement the support for static fields in java classes
-- [ ] Fix the command line arguments handling bug in angr
+- [x] Fix the command line arguments handling bug in angr
 
  
 ## Angr deployment tutorial 
 1. Install python packages **virtualenv** and **virtualenvwrapper**.
 1. Clone [angr-dev](https://github.com/angr/angr-dev).
 2. Install angr with the instructions provided by angr-dev. 
-2. Remove the following directories inside of angr-dev **"angr"**, **"cle"**, **"claripy"** becuase we will replace with our own implementations.
+2. Remove the following directories inside of angr-dev **"angr"**, **"claripy"** becuase we will replace with our own implementations.
 3. Clone our [forked version of angr](https://github.com/VIPSIYI/angr) to angr-dev.
-4. Clone our [forked version of cle](https://github.com/VIPSIYI/cle) to angr-dev.
 5. Clone our [forked version of claripy](https://github.com/Lukas-Dresel/claripy) to angr-dev. 
 6. Install [pysmt](https://github.com/pysmt/pysmt). We need it to parse and dump smt lib scripts.
-	``` pip install git+https://github.com/pysmt/pysmt ```
+	``` pip install pysmt ```
 7. Clone [pysoot](https://github.com/Phat3/pysoot) to angr-dev. 
 8. Install pysoot.
 	``` pip install -e .```
 9. Switch to branch **feat/soot** in **angr**
+10. Switch to branch **feat/strings** in **claripy**
+
+## Running example
+1. Browse to the directory examples/java_fauxwawre_string
+2. Run the script test_java_string_fauxware.py
+
+This script will explore all possible states of the java program fauxware and it will collect all teh constraints.
 
 
 
