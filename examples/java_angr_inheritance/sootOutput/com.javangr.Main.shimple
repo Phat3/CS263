@@ -1,0 +1,34 @@
+public class com.javangr.Main extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        com.javangr.Main r0;
+
+        r0 := @this: com.javangr.Main;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        com.javangr.B r1, $r2, $r3;
+
+        r0 := @parameter0: java.lang.String[];
+
+        $r2 = new com.javangr.B;
+
+        specialinvoke $r2.<com.javangr.B: void <init>()>();
+
+        r1 = $r2;
+
+        $r3 = (com.javangr.B) r1;
+
+        virtualinvoke $r3.<com.javangr.B: void foo(int)>(12);
+
+        return;
+    }
+}

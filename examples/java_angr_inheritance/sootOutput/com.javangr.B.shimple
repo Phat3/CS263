@@ -1,0 +1,65 @@
+class com.javangr.B extends com.javangr.A
+{
+    public static java.lang.String stat_0_b;
+
+    void <init>()
+    {
+        com.javangr.B r0;
+        java.io.PrintStream $r1;
+
+        r0 := @this: com.javangr.B;
+
+        specialinvoke r0.<com.javangr.A: void <init>(int)>(10);
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("B constructor");
+
+        return;
+    }
+
+    public void foo()
+    {
+        com.javangr.B r0;
+        java.io.PrintStream $r1, $r3;
+        java.lang.String $r2;
+
+        r0 := @this: com.javangr.B;
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("I\'m B!");
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        $r2 = <com.javangr.B: java.lang.String stat_0_b>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>($r2);
+
+        return;
+    }
+
+    public void foo(int)
+    {
+        com.javangr.B r0;
+        int i0;
+        java.io.PrintStream $r1;
+
+        r0 := @this: com.javangr.B;
+
+        i0 := @parameter0: int;
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("I\'m B overloaded!");
+
+        return;
+    }
+
+    static void <clinit>()
+    {
+        <com.javangr.B: java.lang.String stat_0_b> = "Static_0_";
+
+        return;
+    }
+}

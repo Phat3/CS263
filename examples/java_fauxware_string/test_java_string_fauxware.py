@@ -16,6 +16,17 @@ def dump_block_info(block):
     except Exception as e:
         pass
 
+def dump_stack(state):
+    for label, content in state.memory.stack._store.iteritems(): 
+        print "%s ---> %r ---> %r" % (label, content.value, type(content.value))
+
+def dump_heap(state):
+    for label, content in state.memory.heap._store.iteritems(): 
+        print "%s ---> %r ---> %r" % (label, content.value, type(content.value))
+
+def dump_static_table(state):
+    for label, content in state.memory.vm_static_table._store.iteritems(): 
+        print "%s ---> %r ---> %r" % (label, content.value, type(content.value))
 
 def dump_stash_info(stash_name, stash_content):
     print "---> Stash: %s" % stash_name
@@ -23,6 +34,16 @@ def dump_stash_info(stash_name, stash_content):
         print "\n**********************************"
         print "------> Constraints: %r\n" % state.se.constraints
         dump_block_info(state.block())
+        print
+        print "------------- STACK -------------\n"
+        dump_stack(state)
+        print "---------------------------------\n"
+        print "------------- HEAP -------------\n"
+        dump_heap(state)
+        print "---------------------------------\n"
+        print "------------- STATIC TABLE -------------\n"
+        dump_static_table(state)
+        print "---------------------------------\n"
     print "**********************************"
 
 

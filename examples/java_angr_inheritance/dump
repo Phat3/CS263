@@ -1,0 +1,347 @@
+[31;1mDeprecation warning: Use main_object instead of main_bin[0m
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:0)>
+
+//<Block 0 [0], 6 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r2 = new com.javangr.B
+$r2.<init>() [specialinvoke com.javangr.B.<init>()]
+r1 = $r2
+r1.foo() [virtualinvoke com.javangr.A.foo()]
+return null
+**********************************
+-----------------------------------------------------------------
+<Terminator>
+None
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.B.<init>()+(0:0)>
+
+//<Block 0 [0], 5 statements>
+r0 <- @this[com.javangr.B]
+r0.<init>() [specialinvoke com.javangr.A.<init>()]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"B constructor"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+<com.javangr.Main.main(java.lang.String[])+(0:3)>
+None
+<com.javangr.Main.main(java.lang.String[])+(0:5)>
+None
+<Terminator>
+None
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.A.<init>()+(0:0)>
+
+//<Block 0 [0], 8 statements>
+r0 <- @this[com.javangr.A]
+r0.<init>() [specialinvoke java.lang.Object.<init>()]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"A constructor"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+$r3 = StaticFieldRef (u'out', u'java.lang.System')
+$r2 = StaticFieldRef (u'stat_0_a', u'com.javangr.A')
+$r3.println($r2) [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.lang.Object.<init>()+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.A.<init>()+(0:2)>
+
+//<Block 0 [0], 8 statements>
+r0 <- @this[com.javangr.A]
+r0.<init>() [specialinvoke java.lang.Object.<init>()]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"A constructor"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+$r3 = StaticFieldRef (u'out', u'java.lang.System')
+$r2 = StaticFieldRef (u'stat_0_a', u'com.javangr.A')
+$r3.println($r2) [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.A.<init>()+(0:4)>
+
+//<Block 0 [0], 8 statements>
+r0 <- @this[com.javangr.A]
+r0.<init>() [specialinvoke java.lang.Object.<init>()]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"A constructor"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+$r3 = StaticFieldRef (u'out', u'java.lang.System')
+$r2 = StaticFieldRef (u'stat_0_a', u'com.javangr.A')
+$r3.println($r2) [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.A.<init>()+(0:7)>
+
+//<Block 0 [0], 8 statements>
+r0 <- @this[com.javangr.A]
+r0.<init>() [specialinvoke java.lang.Object.<init>()]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"A constructor"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+$r3 = StaticFieldRef (u'out', u'java.lang.System')
+$r2 = StaticFieldRef (u'stat_0_a', u'com.javangr.A')
+$r3.println($r2) [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+<com.javangr.B.<init>()+(0:2)>
+None
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.B.<init>()+(0:2)>
+
+//<Block 0 [0], 5 statements>
+r0 <- @this[com.javangr.B]
+r0.<init>() [specialinvoke com.javangr.A.<init>()]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"B constructor"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.B.<init>()+(0:4)>
+
+//<Block 0 [0], 5 statements>
+r0 <- @this[com.javangr.B]
+r0.<init>() [specialinvoke com.javangr.A.<init>()]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"B constructor"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+<com.javangr.Main.main(java.lang.String[])+(0:3)>
+None
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:3)>
+
+//<Block 0 [0], 6 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r2 = new com.javangr.B
+$r2.<init>() [specialinvoke com.javangr.B.<init>()]
+r1 = $r2
+r1.foo() [virtualinvoke com.javangr.A.foo()]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.B.foo()+(0:0)>
+
+//<Block 0 [0], 7 statements>
+r0 <- @this[com.javangr.B]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"I\\\'m B!"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+$r3 = StaticFieldRef (u'out', u'java.lang.System')
+$r2 = StaticFieldRef (u'stat_0_b', u'com.javangr.B')
+$r3.println($r2) [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.B.foo()+(0:3)>
+
+//<Block 0 [0], 7 statements>
+r0 <- @this[com.javangr.B]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"I\\\'m B!"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+$r3 = StaticFieldRef (u'out', u'java.lang.System')
+$r2 = StaticFieldRef (u'stat_0_b', u'com.javangr.B')
+$r3.println($r2) [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <java.io.PrintStream.println(java.lang.String)+(0:0)>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.B.foo()+(0:6)>
+
+//<Block 0 [0], 7 statements>
+r0 <- @this[com.javangr.B]
+$r1 = StaticFieldRef (u'out', u'java.lang.System')
+$r1.println('"I\\\'m B!"') [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+$r3 = StaticFieldRef (u'out', u'java.lang.System')
+$r2 = StaticFieldRef (u'stat_0_b', u'com.javangr.B')
+$r3.println($r2) [virtualinvoke java.io.PrintStream.println(java.lang.String)]
+return null
+**********************************
+-----------------------------------------------------------------
+<com.javangr.Main.main(java.lang.String[])+(0:5)>
+None
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <com.javangr.Main.main(java.lang.String[])+(0:5)>
+
+//<Block 0 [0], 6 statements>
+r0 <- @parameter0[java.lang.String[]]
+$r2 = new com.javangr.B
+$r2.<init>() [specialinvoke com.javangr.B.<init>()]
+r1 = $r2
+r1.foo() [virtualinvoke com.javangr.A.foo()]
+return null
+**********************************
+-----------------------------------------------------------------
+<Terminator>
+None
+
+------------ STEP -----------------------------------------------
+---> Stash: active
+
+**********************************
+------> Constraints: []
+
+------> Addr: <Terminator>
+
+**********************************
+-----------------------------------------------------------------
+
+------------ STEP -----------------------------------------------
+---> Stash: deadended
+
+**********************************
+------> Constraints: []
+
+------> Addr: <Terminator>
+
+**********************************
+-----------------------------------------------------------------

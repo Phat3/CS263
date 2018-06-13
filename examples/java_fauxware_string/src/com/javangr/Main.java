@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 
     public static String sneaky = "SOSNEAKY";
-    public String defaultAttribute = "CASA";
 
     public static int authenticate(String username, String password){
         if(password.equals(Main.sneaky)){

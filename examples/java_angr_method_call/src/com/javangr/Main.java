@@ -14,11 +14,17 @@ class Dummy {
     public int foo(int a, int b){
         return a + b + Dummy.to_be_loaded;
     }
+
+    public static int bar(int a){
+        return a + 10;
+    }
 }
 
 public class Main {
 
     public static void main(String[] args) {
+        Dummy.bar(12);
+        Dummy.to_be_loaded = 10;
         Dummy d = new Dummy(12);
         int attribute = d.attr_2;
         int res = d.foo(11, 2);
